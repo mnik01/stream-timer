@@ -29,11 +29,12 @@ function reqHandler(req: Request) {
       links: [
         { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" },
       ],
+      styles: ['html { scrollbar-gutter: unset; }'],
       title: "Countdown timer mnik01",
       body: (
         <main>
           <div id="background" class="w-screen overflow-hidden h-screen bg-blue-300 flex items-center justify-center">
-            <h1 id="timer" class="text-white font-light" style={`font-size: 27rem; font-family: 'Inter', 'Roboto', sans-serif;`}>
+            <h1 id="timer" class="text-white font-light" style={`font-size: 25.5vw; font-family: 'Inter', 'Roboto', sans-serif;`}>
               {parseSeconds(duration)}
             </h1>
           </div>
