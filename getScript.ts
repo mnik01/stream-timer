@@ -1,4 +1,4 @@
-export const getScript = (duration: number, finishText?: string) => `
+export const getScript = (duration: number, finishText = '') => `
   document.addEventListener("DOMContentLoaded", () => {
     // helper function to convert seconds to minutes and seconds
   function parseSeconds(value) {
